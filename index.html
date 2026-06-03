@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alina - Heladería y Dulcería Artesanal en Volcán, Chiriquí, Panamá. Helados artesanales, fresas con crema, postres y dulces caseros. Vía hacia Cerro Punta." />
+  <meta name="keywords" content="heladería, helados artesanales, dulcería, fresas con crema, postres, Volcán, Chiriquí, Panamá, Cerro Punta" />
+  <meta name="author" content="Heladería Alina" />
+  <meta property="og:title" content="Alina - Heladería y Dulcería Artesanal | Volcán, Chiriquí" />
+  <meta property="og:description" content="Los mejores helados artesanales, fresas con crema y postres caseros en Volcán, Chiriquí, Panamá." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_PA" />
+  <title>Alina - Heladería y Dulcería Artesanal | Volcán, Chiriquí, Panamá</title>
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍦</text></svg>" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <span class="brand-icon">🍦</span>
+        <span class="brand-text">Alina</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <span class="toggler-icon"><i class="bi bi-list"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sabores">Sabores</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Reseñas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link nav-cta" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="container hero-content text-center">
+      <p class="hero-pre" data-aos="fade-down" data-aos-delay="100">✦ Volcán, Chiriquí, Panamá ✦</p>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+        <span class="script-accent">Alina</span><br/>
+        <span class="hero-subtitle-text">Heladería & Dulcería</span>
+      </h1>
+      <p class="hero-tagline" data-aos="fade-up" data-aos-delay="400">
+        Artesanal desde el primer bocado.<br/>Sabores que despiertan el alma.
+      </p>
+      <div class="hero-btns d-flex flex-wrap justify-content-center gap-3 mt-4" data-aos="fade-up" data-aos-delay="550">
+        <a href="#productos" class="btn btn-hero-primary">
+          <i class="bi bi-journal-bookmark me-2"></i>Ver Menú
+        </a>
+        <a href="#ubicacion" class="btn btn-hero-outline">
+          <i class="bi bi-geo-alt me-2"></i>Cómo Llegar
+        </a>
+      </div>
+      <div class="hero-scroll-hint" data-aos="fade-up" data-aos-delay="700">
+        <span class="scroll-mouse"><i class="bi bi-chevron-double-down"></i></span>
+      </div>
+    </div>
+    <!-- Decorative blobs -->
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+  </section>
+
+  <!-- ===================== BADGE STRIP ===================== -->
+  <div class="badge-strip">
+    <div class="container">
+      <div class="badge-items d-flex flex-wrap justify-content-center gap-4 py-3">
+        <div class="badge-item"><i class="bi bi-patch-check-fill me-2"></i>100% Artesanal</div>
+        <div class="badge-item"><i class="bi bi-flower1 me-2"></i>Ingredientes Frescos</div>
+        <div class="badge-item"><i class="bi bi-heart-fill me-2"></i>Hecho con Amor</div>
+        <div class="badge-item"><i class="bi bi-geo-alt-fill me-2"></i>Volcán, Chiriquí</div>
+        <div class="badge-item"><i class="bi bi-stars me-2"></i>Familia Panameña</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== NOSOTROS ===================== -->
+  <section id="nosotros" class="section-padding">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-img-wrap">
+            <div class="about-img-main">
+              <!-- Ice cream shop illustration via CSS -->
+              <div class="img-placeholder-about">
+                <div class="ice-cream-visual">
+                  <span class="ic-cone">🍦</span>
+                  <span class="ic-cone-2">🍨</span>
+                  <span class="ic-cone-3">🍧</span>
+                </div>
+                <p>Volcán, Chiriquí</p>
+              </div>
+            </div>
+            <div class="about-badge-float glass-card">
+              <span class="badge-year">+10</span>
+              <span class="badge-label">Años de<br/>Tradición</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
+          <span class="section-label">Nuestra Historia</span>
+          <h2 class="section-title">Una tradición dulce <em>nacida en las montañas</em></h2>
+          <p class="section-body">
+            En el corazón de Volcán, Chiriquí, donde el aire frío de las montañas se mezcla con el aroma de las flores tropicales, nació <strong>Alina Heladería y Dulcería Artesanal</strong>. Somos una empresa familiar que ha convertido la pasión por los dulces en un arte.
+          </p>
+          <p class="section-body">
+            Cada helado, cada postre, cada fresa con crema, es elaborada con ingredientes frescos seleccionados con amor. Nuestras recetas son secretos transmitidos de generación en generación, perfeccionados con el tiempo y el cariño de nuestra familia.
+          </p>
+          <div class="about-pillars row g-3 mt-3">
+            <div class="col-6">
+              <div class="pillar-card glass-card">
+                <i class="bi bi-award-fill"></i>
+                <span>Calidad Premium</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="pillar-card glass-card">
+                <i class="bi bi-people-fill"></i>
+                <span>Familia Panameña</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="pillar-card glass-card">
+                <i class="bi bi-leaf-fill"></i>
+                <span>Ingredientes Naturales</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="pillar-card glass-card">
+                <i class="bi bi-heart-fill"></i>
+                <span>Hecho con Amor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTOS DESTACADOS ===================== -->
+  <section id="productos" class="section-padding section-alt">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-label">Nuestros Productos</span>
+        <h2 class="section-title">Delicias <em>artesanales</em> para cada antojo</h2>
+        <p class="section-desc">Cada bocado es una experiencia única, elaborada con los mejores ingredientes del mercado.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="product-filters d-flex flex-wrap justify-content-center gap-2 mb-5" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="helados">Helados</button>
+        <button class="filter-btn" data-filter="fresas">Fresas</button>
+        <button class="filter-btn" data-filter="postres">Postres</button>
+        <button class="filter-btn" data-filter="dulces">Dulces</button>
+      </div>
+
+      <div class="row g-4" id="productGrid">
+
+        <!-- Helados Artesanales -->
+        <div class="col-sm-6 col-lg-4 product-item" data-category="helados" data-aos="fade-up" data-aos-delay="0">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="product-img-placeholder" style="--emoji:'🍦'; --bg: linear-gradient(135deg,#fce4ec,#f8bbd9);">
+                <span>🍦</span>
+              </div>
+              <div class="product-badge">Favorito</div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Helados Artesanales</h3>
+              <p class="product-desc">Cremosos helados elaborados con leche fresca y frutas naturales en una variedad de sabores únicos.</p>
+              <div class="product-footer">
+                <span class="product-price">Desde $1.50</span>
+                <a href="#sabores" class="btn btn-product">Ver Sabores</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fresas con Crema -->
+        <div class="col-sm-6 col-lg-4 product-item" data-category="fresas" data-aos="fade-up" data-aos-delay="80">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="product-img-placeholder" style="--emoji:'🍓'; --bg: linear-gradient(135deg,#ffebee,#ffcdd2);">
+                <span>🍓</span>
+              </div>
+              <div class="product-badge badge-nuevo">Estrella</div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Fresas con Crema</h3>
+              <p class="product-desc">Fresas frescas de la región bañadas en crema suave y dulce. El clásico irresistible de la casa.</p>
+              <div class="product-footer">
+                <span class="product-price">Desde $2.50</span>
+                <a href="#contacto" class="btn btn-product">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fresas con Natilla -->
+        <div class="col-sm-6 col-lg-4 product-item" data-category="fresas" data-aos="fade-up" data-aos-delay="160">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="product-img-placeholder" style="--emoji:'🍓'; --bg: linear-gradient(135deg,#fce4ec,#e8d5b7);">
+                <span>🍓</span>
+              </div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Fresas con Natilla</h3>
+              <p class="product-desc">Combinación perfecta de fresas rojas y maduras con nuestra natilla casera de receta tradicional.</p>
+              <div class="product-footer">
+                <span class="product-price">Desde $2.75</span>
+                <a href="#contacto" class="btn btn-product">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gelatos -->
+        <div class="col-sm-6 col-lg-4 product-item" data-category="helados" data-aos="fade-up" data-aos-delay="0">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="product-img-placeholder" style="--emoji:'🍨'; --bg: linear-gradient(135deg,#e8eaf6,#c5cae9);">
+                <span>🍨</span>
+              </div>
+              <div class="product-badge badge-premium">Premium</div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Gelatos Artesanales</h3>
+              <p class="product-desc">Gelatos de estilo italiano con textura densa y cremosa. Elaborados con ingredientes importados y locales.</p>
+              <div class="product-footer">
+                <span class="product-price">Desde $2.00</span>
+                <a href="#contacto" class="btn btn-product">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brownies -->
+        <div class="col-sm-6 col-lg-4 product-item" data-category="postres" data-aos="fade-up" data-aos-delay="80">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="product-img-placeholder" style="--emoji:'🍫'; --bg: linear-gradient(135deg,#efebe9,#d7ccc8);">
+                <span>🍫</span>
+              </div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Brownies Caseros</h3>
+              <p class="product-desc">Suaves y húmedos brownies de chocolate con nueces. Horneados diariamente con receta casera secreta.</p>
+              <div class="product-footer">
+                <span class="product-price">Desde $1.75</span>
+                <a href="#contacto" class="btn btn-product">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Galletas -->
+        <div class="col-sm-6 col-lg-4 product-item" data-category="dulces" data-aos="fade-up" data-aos-delay="160">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="product-img-placeholder" style="--emoji:'🍪'; --bg: linear-gradient(135deg,#fff8e1,#ffecb3);">
+                <span>🍪</span>
+              </div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Galletas Artesanales</h3>
+              <p class="product-desc">Crujientes galletas con sabores variados: mantequilla, chocochips, canela y más. ¡Perfectas para llevar!</p>
+              <div class="product-footer">
+                <span class="product-price">Desde $0.75</span>
+                <a href="#contacto" class="btn btn-product">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dulces Caseros -->
+        <div class="col-sm-6 col-lg-4 product-item" data-category="dulces" data-aos="fade-up" data-aos-delay="0">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="product-img-placeholder" style="--emoji:'🍬'; --bg: linear-gradient(135deg,#fce4ec,#f3e5f5);">
+                <span>🍬</span>
+              </div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Dulces Caseros</h3>
+              <p class="product-desc">Variedad de dulces panameños tradicionales elaborados artesanalmente: cocadas, mazapanes, cajetas y más.</p>
+              <div class="product-footer">
+                <span class="product-price">Desde $0.50</span>
+                <a href="#contacto" class="btn btn-product">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Postres Especiales -->
+        <div class="col-sm-6 col-lg-4 product-item" data-category="postres" data-aos="fade-up" data-aos-delay="80">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="product-img-placeholder" style="--emoji:'🎂'; --bg: linear-gradient(135deg,#fdf6e3,#fce4ec);">
+                <span>🎂</span>
+              </div>
+              <div class="product-badge badge-nuevo">Especial</div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Postres Especiales</h3>
+              <p class="product-desc">Creaciones únicas de la casa: parfaits, sundaes, tartas de frutas y postres de temporada.</p>
+              <div class="product-footer">
+                <span class="product-price">Desde $3.00</span>
+                <a href="#contacto" class="btn btn-product">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Café y Bebidas -->
+        <div class="col-sm-6 col-lg-4 product-item" data-category="postres" data-aos="fade-up" data-aos-delay="160">
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <div class="product-img-placeholder" style="--emoji:'☕'; --bg: linear-gradient(135deg,#efebe9,#bcaaa4);">
+                <span>☕</span>
+              </div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Café & Bebidas</h3>
+              <p class="product-desc">Café chiricano de la región, batidos de frutas, milkshakes cremosos y bebidas frías y calientes.</p>
+              <div class="product-footer">
+                <span class="product-price">Desde $1.25</span>
+                <a href="#contacto" class="btn btn-product">Pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div>
+  </section>
+
+  <!-- ===================== SABORES ===================== -->
+  <section id="sabores" class="section-padding sabores-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-label">Nuestros Sabores</span>
+        <h2 class="section-title">Un arcoíris <em>de sabores</em> artesanales</h2>
+        <p class="section-desc">Cada sabor es una historia. Nuestros helados están elaborados con frutas frescas y recetas únicas.</p>
+      </div>
+
+      <div class="sabores-grid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="sabor-card" style="--color:#fce4ec; --dot:#f48fb1;">
+          <div class="sabor-icon">🍦</div>
+          <div class="sabor-dot"></div>
+          <h4>Vainilla</h4>
+          <p>Cremosa y suave</p>
+        </div>
+
+        <div class="sabor-card" style="--color:#efebe9; --dot:#795548;">
+          <div class="sabor-icon">🍫</div>
+          <div class="sabor-dot"></div>
+          <h4>Chocolate</h4>
+          <p>Intenso y rico</p>
+        </div>
+
+        <div class="sabor-card" style="--color:#ffebee; --dot:#e91e63;">
+          <div class="sabor-icon">🍓</div>
+          <div class="sabor-dot"></div>
+          <h4>Fresa</h4>
+          <p>Fresca y natural</p>
+        </div>
+
+        <div class="sabor-card" style="--color:#efebe9; --dot:#6d4c41;">
+          <div class="sabor-icon">☕</div>
+          <div class="sabor-dot"></div>
+          <h4>Cappuccino</h4>
+          <p>Aromático y único</p>
+        </div>
+
+        <div class="sabor-card" style="--color:#e0f7fa; --dot:#26c6da;">
+          <div class="sabor-icon">🥥</div>
+          <div class="sabor-dot"></div>
+          <h4>Coco</h4>
+          <p>Tropical y exótico</p>
+        </div>
+
+        <div class="sabor-card" style="--color:#f3e5f5; --dot:#9c27b0;">
+          <div class="sabor-icon">🫐</div>
+          <div class="sabor-dot"></div>
+          <h4>Zarzamora</h4>
+          <p>Silvestre y profundo</p>
+        </div>
+
+        <div class="sabor-card" style="--color:#e8f5e9; --dot:#66bb6a;">
+          <div class="sabor-icon">🌿</div>
+          <div class="sabor-dot"></div>
+          <h4>Pistacho</h4>
+          <p>Elegante y sutil</p>
+        </div>
+
+        <div class="sabor-card" style="--color:#fff3e0; --dot:#ffa726;">
+          <div class="sabor-icon">🥭</div>
+          <div class="sabor-dot"></div>
+          <h4>Mango</h4>
+          <p>Dulce y tropical</p>
+        </div>
+
+        <div class="sabor-card" style="--color:#fce4ec; --dot:#e91e63;">
+          <div class="sabor-icon">🍑</div>
+          <div class="sabor-dot"></div>
+          <h4>Durazno</h4>
+          <p>Suave y perfumado</p>
+        </div>
+
+        <div class="sabor-card" style="--color:#fffde7; --dot:#fdd835;">
+          <div class="sabor-icon">🍋</div>
+          <div class="sabor-dot"></div>
+          <h4>Limón</h4>
+          <p>Cítrico y refrescante</p>
+        </div>
+
+        <div class="sabor-card" style="--color:#fde8d8; --dot:#ff7043;">
+          <div class="sabor-icon">🍈</div>
+          <div class="sabor-dot"></div>
+          <h4>Guanábana</h4>
+          <p>Exótico y cremoso</p>
+        </div>
+
+        <div class="sabor-card sabor-especial" style="--color:#fdf6e3; --dot:#d4a952;">
+          <div class="sabor-icon">✨</div>
+          <div class="sabor-dot"></div>
+          <h4>Sabor del Día</h4>
+          <p>Sorpresa artesanal</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERÍA ===================== -->
+  <section id="galeria" class="section-padding section-alt">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-label">Nuestra Galería</span>
+        <h2 class="section-title">Momentos <em>dulces</em> que inspiran</h2>
+        <p class="section-desc">Cada imagen cuenta la historia de sabores, amor y dedicación artesanal.</p>
+      </div>
+
+      <div class="gallery-masonry" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="gallery-item gallery-tall">
+          <div class="gallery-inner" style="--emoji:'🍦'; --gbg:linear-gradient(160deg,#fce4ec,#f8bbd9,#fce4ec);">
+            <span class="g-emoji">🍦</span>
+            <div class="gallery-overlay">
+              <p>Helados Artesanales</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-inner" style="--emoji:'🍓'; --gbg:linear-gradient(135deg,#ffebee,#ffcdd2);">
+            <span class="g-emoji">🍓</span>
+            <div class="gallery-overlay">
+              <p>Fresas Frescas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-inner" style="--emoji:'🌿'; --gbg:linear-gradient(135deg,#e8f5e9,#c8e6c9);">
+            <span class="g-emoji">🌿</span>
+            <div class="gallery-overlay">
+              <p>Ingredientes Naturales</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-wide">
+          <div class="gallery-inner" style="--emoji:'🏔️'; --gbg:linear-gradient(135deg,#e3f2fd,#bbdefb);">
+            <span class="g-emoji">🏔️</span>
+            <div class="gallery-overlay">
+              <p>Volcán, Chiriquí</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-inner" style="--emoji:'🍫'; --gbg:linear-gradient(135deg,#efebe9,#d7ccc8);">
+            <span class="g-emoji">🍫</span>
+            <div class="gallery-overlay">
+              <p>Brownies Caseros</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-tall">
+          <div class="gallery-inner" style="--emoji:'🍨'; --gbg:linear-gradient(135deg,#f3e5f5,#e1bee7);">
+            <span class="g-emoji">🍨</span>
+            <div class="gallery-overlay">
+              <p>Gelatos Premium</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-inner" style="--emoji:'😊'; --gbg:linear-gradient(135deg,#fffde7,#fff9c4);">
+            <span class="g-emoji">😊</span>
+            <div class="gallery-overlay">
+              <p>Clientes Felices</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="gallery-inner" style="--emoji:'🍪'; --gbg:linear-gradient(135deg,#fff8e1,#ffecb3);">
+            <span class="g-emoji">🍪</span>
+            <div class="gallery-overlay">
+              <p>Galletas Artesanales</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-wide">
+          <div class="gallery-inner" style="--emoji:'🎂'; --gbg:linear-gradient(135deg,#fce4ec,#fdf6e3);">
+            <span class="g-emoji">🎂</span>
+            <div class="gallery-overlay">
+              <p>Postres Especiales</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== POR QUÉ ELEGIRNOS ===================== -->
+  <section id="elegirnos" class="section-padding por-que-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-label">¿Por qué nosotros?</span>
+        <h2 class="section-title">La diferencia que <em>sientes</em> desde el primer bocado</h2>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="why-card glass-card">
+            <div class="why-icon">🌱</div>
+            <h4>Ingredientes Frescos</h4>
+            <p>Seleccionamos los mejores ingredientes locales y frescos para garantizar sabores auténticos en cada producto.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="why-card glass-card">
+            <div class="why-icon">🤲</div>
+            <h4>Producción Artesanal</h4>
+            <p>Cada helado y dulce es elaborado a mano, sin conservantes ni artificiales. Pureza total en cada porción.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="why-card glass-card">
+            <div class="why-icon">👨‍👩‍👧</div>
+            <h4>Ambiente Familiar</h4>
+            <p>Un espacio cálido y acogedor donde familias y amigos crean recuerdos dulces juntos en Volcán.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="why-card glass-card">
+            <div class="why-icon">😊</div>
+            <h4>Atención Amable</h4>
+            <p>Nuestro equipo te atenderá con calidez y te ayudará a descubrir el sabor perfecto para ti.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="why-card glass-card">
+            <div class="why-icon">🏔️</div>
+            <h4>Ubicación Turística</h4>
+            <p>Estamos en la vía hacia Cerro Punta, el punto perfecto para descansar y disfrutar durante tu viaje.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="why-card glass-card">
+            <div class="why-icon">⭐</div>
+            <h4>Productos Únicos</h4>
+            <p>Creaciones exclusivas que no encontrarás en ningún otro lugar. Sabores que solo Alina puede ofrecerte.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIOS ===================== -->
+  <section id="testimonios" class="section-padding section-alt">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-label">Reseñas</span>
+        <h2 class="section-title">Lo que dicen <em>nuestros clientes</em></h2>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="testimonial-card glass-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Las fresas con crema de Alina son simplemente increíbles. Siempre que paso por Volcán tengo que parar. ¡Los mejores helados de Chiriquí!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M</div>
+              <div>
+                <strong>María González</strong>
+                <span>David, Chiriquí</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card glass-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Visitamos Alina en nuestra ruta a Cerro Punta y quedamos enamorados. Los gelatos artesanales y los brownies son absolutamente deliciosos. ¡Volveremos!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">C</div>
+              <div>
+                <strong>Carlos Martínez</strong>
+                <span>Ciudad de Panamá</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-card glass-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Un lugar mágico en las montañas de Chiriquí. La atención es excelente y los productos son de calidad premium. El helado de cappuccino es mi favorito."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div>
+                <strong>Ana Rodríguez</strong>
+                <span>Boquete, Chiriquí</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="testimonial-card glass-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Los dulces caseros son un tesoro. Me recuerdan a las delicias de mi abuela. Siempre compro para llevar a casa. ¡Una joya de Volcán!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">L</div>
+              <div>
+                <strong>Laura Sánchez</strong>
+                <span>Volcán, Chiriquí</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card glass-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Llevé a mis hijos y fue una experiencia maravillosa. Los niños adoraron los helados de fresa y coco. El ambiente es súper familiar y acogedor."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">R</div>
+              <div>
+                <strong>Roberto Flores</strong>
+                <span>Santiago, Veraguas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-card glass-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Como turista extranjero que visita Panamá, Alina fue una sorpresa increíble. Productos artesanales de altísima calidad a un precio muy accesible."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">J</div>
+              <div>
+                <strong>James Wilson</strong>
+                <span>Turista, EE.UU.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== UBICACIÓN ===================== -->
+  <section id="ubicacion" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-label">Encuéntranos</span>
+        <h2 class="section-title">Visítanos en <em>Volcán, Chiriquí</em></h2>
+        <p class="section-desc">En la vía hacia Cerro Punta, el camino más dulce de la montaña.</p>
+      </div>
+
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="location-info glass-card p-4">
+
+            <div class="location-item">
+              <div class="loc-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <strong>Dirección</strong>
+                <p>Vía hacia Cerro Punta, Volcán<br/>Chiriquí, Panamá</p>
+              </div>
+            </div>
+
+            <div class="location-item">
+              <div class="loc-icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <strong>Horarios</strong>
+                <p>Lunes – Viernes: 9:00 AM – 8:00 PM<br/>
+                   Sábados y Domingos: 8:00 AM – 9:00 PM</p>
+              </div>
+            </div>
+
+            <div class="location-item">
+              <div class="loc-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <strong>Teléfono</strong>
+                <p><a href="tel:+50760000000">+507 6000-0000</a></p>
+              </div>
+            </div>
+
+            <div class="location-item">
+              <div class="loc-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <strong>Correo</strong>
+                <p><a href="mailto:alina@heladeriaalinapanama.com">alina@heladeriaalinapanama.com</a></p>
+              </div>
+            </div>
+
+            <a href="https://wa.me/50760000000?text=Hola%20Alina!%20Me%20gustaría%20obtener%20información%20sobre%20sus%20productos." target="_blank" class="btn btn-whatsapp w-100 mt-3">
+              <i class="bi bi-whatsapp me-2"></i>Contactar por WhatsApp
+            </a>
+
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Volcan+Chiriqui+Panama" target="_blank" class="btn btn-outline-map w-100 mt-2">
+              <i class="bi bi-compass me-2"></i>Abrir en Google Maps
+            </a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="150">
+          <div class="map-wrap glass-card p-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62736.73337786534!2d-82.72!3d8.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa4ecb58d3a2e79%3A0x4a24ca87bbe7b04b!2sVolc%C3%A1n%2C%20Chiriqui%2C%20Panama!5e0!3m2!1ses!2sus!4v1699999999999!5m2!1ses!2sus"
+              width="100%" height="380" style="border:0; border-radius:16px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Mapa Volcán Chiriquí Panamá">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section id="contacto" class="section-padding section-alt">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center" data-aos="fade-up">
+          <span class="section-label">Contáctanos</span>
+          <h2 class="section-title">¿Tienes alguna <em>pregunta</em> o pedido especial?</h2>
+          <p class="section-desc mb-5">Escríbenos y con gusto te atenderemos. También puedes contactarnos directamente por WhatsApp.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-form-wrap glass-card p-4 p-md-5">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group-custom">
+                  <label>Nombre completo</label>
+                  <input type="text" class="form-input-custom" placeholder="Tu nombre" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group-custom">
+                  <label>Correo electrónico</label>
+                  <input type="email" class="form-input-custom" placeholder="tu@email.com" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group-custom">
+                  <label>Teléfono</label>
+                  <input type="tel" class="form-input-custom" placeholder="+507 6000-0000" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group-custom">
+                  <label>Mensaje</label>
+                  <textarea class="form-input-custom" rows="5" placeholder="¿En qué podemos ayudarte?"></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="button" class="btn btn-submit w-100" id="submitBtn">
+                  <i class="bi bi-send me-2"></i>Enviar Mensaje
+                </button>
+              </div>
+            </div>
+            <div class="form-success d-none" id="formSuccess">
+              <div class="success-inner">
+                <span class="success-icon">🎉</span>
+                <h4>¡Mensaje Enviado!</h4>
+                <p>Gracias por contactarnos. Te responderemos muy pronto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <span class="brand-icon-lg">🍦</span>
+              <h3>Alina</h3>
+              <p class="footer-tagline">Heladería &amp; Dulcería Artesanal</p>
+            </div>
+            <p class="footer-desc">Artesanales desde el primer bocado. Sabores auténticos de las montañas de Chiriquí, elaborados con amor y tradición familiar.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://wa.me/50760000000" class="social-link whatsapp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              <a href="#" class="social-link" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 offset-lg-1">
+            <h5 class="footer-heading">Menú</h5>
+            <ul class="footer-links">
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#sabores">Sabores</a></li>
+              <li><a href="#galeria">Galería</a></li>
+              <li><a href="#testimonios">Reseñas</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-lg-2">
+            <h5 class="footer-heading">Productos</h5>
+            <ul class="footer-links">
+              <li><a href="#productos">Helados Artesanales</a></li>
+              <li><a href="#productos">Fresas con Crema</a></li>
+              <li><a href="#productos">Gelatos</a></li>
+              <li><a href="#productos">Brownies</a></li>
+              <li><a href="#productos">Dulces Caseros</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5 class="footer-heading">Contacto</h5>
+            <ul class="footer-contact">
+              <li><i class="bi bi-geo-alt-fill"></i> Vía Cerro Punta, Volcán, Chiriquí</li>
+              <li><i class="bi bi-clock-fill"></i> Lun–Dom: 8:00 AM – 9:00 PM</li>
+              <li><i class="bi bi-telephone-fill"></i> +507 6000-0000</li>
+              <li><i class="bi bi-envelope-fill"></i> alina@heladeriaalinapanama.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p>&copy; 2025 Alina Heladería y Dulcería Artesanal. Todos los derechos reservados.</p>
+        <p class="footer-love">Hecho con <span>❤️</span> en Volcán, Chiriquí, Panamá 🇵🇦</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOATING BUTTONS ===================== -->
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/50760000000?text=Hola%20Alina!%20Me%20gustaría%20información%20sobre%20sus%20productos%20artesanales." target="_blank" class="float-whatsapp" aria-label="Contactar por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span class="wa-tooltip">¡Escríbenos!</span>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
